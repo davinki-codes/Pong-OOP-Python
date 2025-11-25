@@ -1,65 +1,60 @@
-# Pong Game
+# Pong Game - Python OOP
 
 ## Description
-
-This is a recreation of the classic Pong arcade game where two players control paddles to hit a ball back and forth. The game features score tracking, round-based gameplay, and increasing ball speed as rallies continue.
+Classic Pong arcade game recreated in Python. Two players control paddles to hit a ball back and forth, with score tracking, rounds, and dynamic ball speed.
 
 ## Features
-
-- **Two-player gameplay** - Left and right paddles for competitive play
-- **Score tracking** - Points awarded when opponent misses the ball
-- **Round system** - Game plays for a set number of rounds (default: 3)
-- **Dynamic ball speed** - Ball accelerates each time it hits a paddle
-- **Boundary detection** - Ball bounces off top and bottom walls
-- **Game over screen** - Displays winner at the end of the game
+- **Two-player gameplay** - Left and right paddles
+- **Score tracking** - Points for missed ball
+- **Round system** - Default 3 rounds
+- **Dynamic ball speed** - Ball accelerates on paddle hits
+- **Boundary detection** - Ball bounces off walls
+- **Game over screen** - Displays winner
 
 ## Controls
+### Player 1
+- `W` - Move up
+- `S` - Move down
 
-### Player 1 (Left Paddle)
-- `W` - Move paddle up
-- `S` - Move paddle down
-
-### Player 2 (Right Paddle)
-- `Up Arrow` - Move paddle up
-- `Down Arrow` - Move paddle down
+### Player 2
+- `Up Arrow` - Move up
+- `Down Arrow` - Move down
 
 ## Installation
-
-1. Ensure you have Python 3.x installed on your system
+1. Install Python 3.x
 2. Clone or download this repository
-3. No additional packages required (uses built-in `turtle` module)
+3. No extra packages needed (uses built-in `turtle`)
 
 ## How to Run
-
 ```bash
 python main.py
-```
+
 
 ## Game Rules
 
-1. Each player controls a paddle on their side of the screen
-2. The ball bounces off paddles and the top/bottom walls
-3. If a player misses the ball, the opponent scores a point
-4. The game continues for the set number of rounds
-5. The player with the most points at the end wins
+1. Each player controls a paddle
+2. Ball bounces off paddles and walls
+3. Miss the ball → opponent scores
+4. Game continues for set rounds
+5. Highest points wins
 
 ## Configuration
 
-You can modify the following in `main.py`:
-- `number_of_rounds` - Change the number of rounds (default: 3)
-- Screen dimensions in `screen.setup(width=600, height=600)`
+* `number_of_rounds` in `main.py` (default: 3)
+* Screen size: `screen.setup(width=600, height=600)`
 
 ## File Structure
 
-- `main.py` - Main game loop and event handling
-- `paddle_setup.py` - Paddle class and movement logic
-- `pong_and_score.py` - Ball physics and scoreboard management
+* `main.py` - Main loop and events
+* `paddle_setup.py` - Paddle logic
+* `pong_and_score.py` - Ball physics and scoreboard
 
 ## Requirements
 
-- Python 3.x
-- turtle (included in Python standard library)
+* Python 3.x
+* turtle module (standard library)
 
 ## Credits
 
-Created as a Python learning project using object-oriented programming principles.
+Created as a Python learning project using OOP principles.
+
